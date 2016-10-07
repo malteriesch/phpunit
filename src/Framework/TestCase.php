@@ -1817,9 +1817,9 @@ abstract class PHPUnit_Framework_TestCase extends PHPUnit_Framework_Assert imple
      *
      * @since Method available since Release 4.5.0
      */
-    protected function prophesize($classOrInterface = null)
+    protected function prophesize($classOrInterface = null, $disableSpies = false)
     {
-        return $this->getProphet()->prophesize($classOrInterface);
+        return $this->getProphet()->prophesize($classOrInterface, $disableSpies);
     }
 
     /**
